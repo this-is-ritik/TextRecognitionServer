@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Run Model Tensorflow.js</title>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/scripts2.js"></script>
+        <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+        </head>
+    <body>    
+        <input type="file" id ="img-1" accept="image/*" onchange="showimage(event);">
+        <div id="show-results"></div>
+        
+        <div style="width:500px; margin:auto">
+            <canvas id="canvas_1" width="500" height="300"></canvas>
+        </div>
+        <div style="width:601px; margin:auto">
+          <canvas id="canvas_2" width="601" height="400"></canvas>
+        </div>
+        <script src ="js/tesseract-ocr.js"> </script>
+    
+        <script src="https://www.marvinj.org/releases/marvinj-1.0.js"></script>    
+    </body>
+</html>
