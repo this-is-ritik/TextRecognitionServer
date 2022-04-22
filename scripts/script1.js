@@ -1,7 +1,3 @@
-function sleep(s) {
-    return new Promise(resolve => setTimeout(resolve, s*1000));
-}
-
 function showOnWebsite(text,img_path){
     let img = document.createElement("IMG");
     img.src = img_path; 
