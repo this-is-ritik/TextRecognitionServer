@@ -8,10 +8,12 @@ function showOnWebsite(text,img_path){
     let number = document.createElement("recognized-text");
     number.textContent = text;
     let output = document.getElementById("show-results");
-    output.append(number,img);
-    alert(text);
+    output.innerHTML="";
+    output.append(number);
+    //output.append(number,img);
+    //alert(text);
 }
-function showimage(event) {
+function textonimage(event) {
     let img_path = URL.createObjectURL(event.target.files[0]);
     Tesseract.recognize(
     img_path,
@@ -22,8 +24,3 @@ function showimage(event) {
     console.log(text);
     });
 };
-
-
-
-
-
